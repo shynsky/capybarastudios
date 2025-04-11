@@ -11,7 +11,7 @@ metadata:
   title:
     default: Capybara Studios
     template: '%s — Capybara Studios'
-  description: "Automation & AI for growing businesses. We help small and mid-sized companies automate their marketing, sales, and operations."
+  description: "Automation & AI for growing businesses. I help small and mid-sized companies automate their marketing, sales, and operations."
   robots:
     index: true
     follow: true
