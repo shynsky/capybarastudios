@@ -7,13 +7,12 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Capybara Studios — Growth Systems for Small & Medium Businesses',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,78 +24,75 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: "Let's Talk",
+        href: '#contact',
+        icon: 'tabler:message-circle',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Our services', href: '#services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Capybara Studios Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      Growth Systems for <span class="hidden xl:inline">Small & Medium</span>
+      <span class="text-accent dark:text-white highlight"> Businesses</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">Automation and AI systems that free up your time and expand your reach.</span></span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Automation. AI. Growth.</span>
+      We build custom systems that automate your marketing, sales, and operations—no technical expertise required.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <Note>
+    <Fragment slot="content"
+      >MAREK & CAPYBARA STUDIOS HELP BUSINESSES AUTOMATE THEIR WORKFLOWS WITH POWERFUL AI & AUTOMATION SYSTEMS</Fragment
+    >
+  </Note>
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="What We Do"
+    title="Systems We Build For You"
+    subtitle="We create custom automation solutions that handle repetitive tasks, freeing you to focus on growth."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        title: 'Lead Generation Systems',
+        description: 'Automated prospecting, outreach sequences, and lead nurturing that keep your pipeline full.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+        title: 'Sales Process Automation',
+        description: 'Quote generation, proposal creation, follow-ups, and CRM updates that happen automatically.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+        title: 'Marketing Systems',
+        description: 'Content creation, scheduling, and distribution across platforms without daily manual effort.',
+        icon: 'tabler:brand-facebook',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Operations Streamlining',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Automated reports, approval flows, client onboarding, and internal processes that save hours daily.',
+        icon: 'tabler:settings',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+        title: 'AI-Powered Tools',
+        description: 'Custom AI agents that handle customer service, content creation, data analysis, and more.',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Integration Solutions',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Connected systems where your tools talk to each other, eliminating data entry and manual transfers.',
+        icon: 'tabler:arrow-autofit-width',
       },
     ]}
   />
@@ -105,33 +101,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Our Focus"
+    title="System Examples"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Outreach Automation',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Custom email sequences that find leads, make initial contact, and nurture relationships—all on autopilot.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Content Generation',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'AI-powered content systems that create, optimize, and distribute blog posts, social media, and emails.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Data Pipeline Automation',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Automated collection, processing, and reporting of your business data for better decision-making.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'Automation Solution Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Client Onboarding</h3>
+      Automated forms, document collection, welcome sequences, and training that ensure a smooth onboarding experience.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,165 +141,92 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Save 10-30+ Hours Weekly',
+        description: 'Automate repetitive tasks that eat up your valuable time.',
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        title: 'Scale Without Hiring',
+        description: 'Grow your operations without proportionally increasing headcount.',
       },
       {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+        title: 'Never Drop Opportunities',
+        description: 'Reliable follow-up and nurturing that happens with perfect consistency.',
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Reduce Human Error',
+        description: 'Eliminate mistakes in data entry, follow-ups, and routine processes.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'Results Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">What Our Systems Deliver</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    id="services"
+    title="Our Service Packages"
+    subtitle="Flexible options designed to meet your business needs at any scale"
+    tagline="Pricing"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Automation Starter',
+        description: 'Perfect for small businesses looking to automate their first core process',
         icon: 'flat-color-icons:template',
+        callToAction: {
+          text: 'Starting at $1,000/mo',
+          href: '#contact',
+        },
+        features: [
+          'One custom automation system',
+          'Implementation & training',
+          'Monthly maintenance & updates',
+          'Email support',
+          'Tools & platform fees included',
+          'Additional systems: $750 each',
+        ],
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        title: 'Business Accelerator',
+        description: 'Ideal for businesses ready to automate multiple processes',
         icon: 'flat-color-icons:gallery',
+        callToAction: {
+          text: 'Starting at $2,500/mo',
+          href: '#contact',
+        },
+        features: [
+          'Three custom automation systems',
+          'Implementation & training',
+          'Weekly check-ins',
+          'Priority email & chat support',
+          'Tools & platform fees included',
+          'Additional systems: $500 each',
+        ],
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'Enterprise Partner',
+        description: 'For businesses wanting complete workflow automation',
         icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        callToAction: {
+          text: 'Starting at $4,900/mo',
+          href: '#contact',
+        },
+        features: [
+          'Unlimited automation systems',
+          'Implementation & training',
+          'Weekly strategy meetings',
+          'Dedicated Slack channel',
+          'Tools & platform fees included',
+          'Senior automation engineer',
+        ],
       },
     ]}
   >
@@ -312,53 +235,75 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
+  <!-- Steps Widget ****************** -->
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+  <Steps
+    title="How We Work"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Discovery</span>',
+        description: 'We analyze your current workflows to identify bottlenecks and automation opportunities.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Design</span>',
+        description: 'We create a custom automation plan aligned with your business goals and budget.',
+        icon: 'tabler:bulb',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Build</span>',
+        description: 'We develop your automation systems using n8n, Make, or custom solutions.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Launch & Optimize</span>',
+        description: 'We implement your systems, train your team, and continuously improve performance.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'How it works image',
+    }}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Common questions about our automation services and approach"
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What tools do you use to build automation systems?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'We primarily use n8n, Make (formerly Integromat), Zapier, and custom solutions depending on your specific needs. We select the right tool for each job to ensure optimal performance and scalability.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Do I need to understand how the automation works?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Not at all. We handle all the technical details and provide simple dashboards and interfaces for you to monitor and control your systems. We also provide thorough training so you understand what the system does, even if you don't need to know how it works.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How long does it take to implement an automation system?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Most systems can be implemented within 2-4 weeks, depending on complexity. Simple automations might take just a few days, while more complex enterprise solutions could take 6-8 weeks for full implementation.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'What happens if the automation breaks or needs updates?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "All our service plans include ongoing maintenance and support. If something breaks, we fix it promptly. As your business evolves, we'll update your systems to accommodate your changing needs.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Can you integrate with my existing tools and software?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "Yes! We specialize in connecting different platforms and tools. We work with most major business software and can often develop custom connections for specialized tools. During our discovery process, we'll assess your current tech stack and ensure compatibility.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'How soon will I see results from automation?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Most clients begin seeing time savings immediately after implementation. More complex benefits like increased sales or improved customer retention typically become apparent within 1-3 months as the automated processes generate data and outcomes.',
       },
     ]}
   />
@@ -367,10 +312,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Automation Tools', amount: '10+' },
+      { title: 'Integration Capabilities', amount: '500+' },
+      { title: 'Development Experience', amount: '20+ years' },
+      { title: 'Guaranteed Support Response', amount: '24h' },
     ]}
   />
 
@@ -380,20 +325,30 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Schedule Free Consultation',
+        href: '#contact',
+        icon: 'tabler:calendar',
       },
     ]}
+    id="contact"
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready to <span class="text-accent">Automate</span> Your <br class="block sm:hidden" /><span
+        class="sm:whitespace-nowrap">Business Growth?</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Let's discuss how automation can transform your specific business operations.
+      <br /><br />
+      <span class="text-sm"
+        >Not quite ready? Watch practical automation examples on our <a
+          href="https://www.youtube.com/@automatyzacjaai"
+          class="text-primary hover:underline">YouTube channel</a
+        > or email us at <a href="mailto:contact@capybarastudios.com" class="text-primary hover:underline"
+          >contact@capybarastudios.com</a
+        ></span
+      >
     </Fragment>
   </CallToAction>
 </Layout>
