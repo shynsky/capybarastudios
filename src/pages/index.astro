@@ -7,14 +7,25 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Capybara Studios — Automation Systems for Small & Medium Businesses',
   ignoreTitleTemplate: true,
 };
+
+// Define FAQ descriptions as constants with escaped apostrophes
+const faqDesc1 = `We use a <strong>curated stack of trusted tools</strong> that we've tested in real-world environments over the years. Our recommendations are based on <strong>stability, community support, long-term maintenance, and transparency</strong>. We avoid trendy or unproven platforms, and only use technologies that we would confidently rely on in our own business.<br /><br />You don't need to know the tools—we guide and explain everything. For clients who already use systems like <strong>Notion</strong>, <strong>Google Sheets</strong>, or platforms like <strong>Facebook</strong>, <strong>Instagram</strong>, <strong>WhatsApp</strong>, or <strong>Discord</strong>, we can build automations around your existing stack.<br /><br />If needed, we can also set up your own private automation environment. That might mean:<ul><li>Running your own secure automation server (e.g. n8n) on a local machine or cloud VPS</li><li>Hosting it for you on our infrastructure, fully managed by us</li></ul>Either way, we give you full transparency and control over your system.`;
+
+const faqDesc2 = `<strong>Nothing.</strong> You don't need to know what an API key is, how AI works, or what tools to use—we'll guide you through the entire process.<br /><br />But while technical knowledge isn't necessary, we do love working with businesses who <strong>know their own business well</strong>: what they do, what success means for them, and—ideally—how they measure it.<br /><br />You don't need fancy dashboards or complex metrics. But having a basic understanding of what "good" looks like in your operations or marketing helps us:<ul><li>Define what success looks like</li><li>Design smarter automations</li><li>Make data-driven improvements over time</li></ul>That said, we also support simpler setups where the goal is just: "Is it working?"<br /><br />We adapt to your level of clarity—but the more you know about your own work, the more we can help amplify it.`;
+
+const faqDesc3 = `Yes—<strong>this is exactly for you.</strong><br /><br />Our mission is to cut through the jargon and noise that surrounds AI and automation. We translate the technical world into <strong>human language</strong>, so you can understand what's happening even if you've never written a line of code.<br /><br />We'll explain what each tool does, how decisions are made, and where your data flows—so you're never in the dark. If you're curious, we're happy to explain the "how" behind what we build. If you're not, you'll still get reliable results you can trust.<br /><br />Whether it's automating outreach, generating content, or connecting your tools—we make it understandable, practical, and custom-fit for your business.`;
+
+const faqDesc4 = `Yes. You can cancel your subscription at any time—no lock-ins, no penalties.<br /><br />We understand that business needs change. While we're focused on building long-term partnerships and delivering compounding value, we also respect your autonomy. If you feel the systems are running smoothly or want to pause, you're free to opt out.<br /><br />(We haven't defined trial periods or minimum terms yet, but we're open to flexible models that fit different client stages.)`;
+
+const faqDesc5 = `Absolutely. Custom builds are our <strong>bread and butter</strong>.<br /><br />While we have some repeatable automation templates, every business is at least a little different—and often, a lot different. We <strong>always customize our solutions</strong> to fit the way your business works, your internal tools, your team's habits, and your growth goals.<br /><br />If you need something unique, experimental, or integrated in a very specific way, we're happy to design and build it from the ground up. That's what we do best.`;
 ---
 
 <Layout metadata={metadata}>
@@ -30,7 +41,7 @@ const metadata = {
       },
       { text: 'Our services', href: '#services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Capybara Studios Hero Image' }}
+    image={{ src: '~/assets/images/landing-banner-capybara.jpeg', alt: 'Capybara Studios Hero Image' }}
   >
     <Fragment slot="title">
       Automation Systems for <span class="hidden xl:inline">Small & Medium</span>
@@ -38,21 +49,15 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Automation and AI systems that free up your time and expand your reach.</span></span
+      <span class="font-semibold">Bridging the gap for small to medium businesses to the world of AI & Automation.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Automation. AI. Growth.</span>
-      We build custom systems that automate your marketing, sales, and operations—no technical expertise required.
+      <br />
+      We help unlock sustainable value through accessible, ROI-focused automation systems, no in-house experts needed.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
-
-  <Note>
-    <Fragment slot="content"
-      >MAREK & CAPYBARA STUDIOS HELP BUSINESSES AUTOMATE THEIR WORKFLOWS WITH POWERFUL AI & AUTOMATION SYSTEMS</Fragment
-    >
-  </Note>
+  <Note> We build automation the Capybara way - calm, collaborative, and effective. </Note>
 
   <!-- Features Widget *************** -->
 
@@ -60,39 +65,109 @@ const metadata = {
     id="features"
     tagline="What We Do"
     title="Systems We Build For You"
-    subtitle="We create custom automation solutions that handle repetitive tasks, freeing you to focus on growth."
+    subtitle="We offer specialized automation services to streamline your operations and enhance your digital presence."
     items={[
       {
-        title: 'Lead Generation Systems',
-        description: 'Automated prospecting, outreach sequences, and lead nurturing that keep your pipeline full.',
+        title: 'AI SEO Automation',
+        description:
+          'Full pipeline from keyword research to AI-generated content, auto-scheduling, publishing, and internal linking for maximum organic reach.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Marketing Automation',
+        description:
+          'Social media autopilots, dynamic email campaigns, lead capture, CRM sync, and AI-powered image creation to engage your audience consistently.',
+        icon: 'tabler:speakerphone',
+      },
+      {
+        title: 'Business Process Automation',
+        description:
+          'Custom-built systems using AI and APIs to remove bottlenecks in your operations, sales, or administrative tasks, focusing on high ROI.',
+        icon: 'tabler:settings-automation',
+      },
+      {
+        title: 'Sales Automation & Lead Nurturing',
+        description:
+          'Automate outbound outreach, lead nurturing, and qualification. Instantly respond to new inquiries, score leads from contact forms, and trigger personalized follow-ups—so your sales pipeline never goes cold.',
+        icon: 'tabler:mail-forward',
+      },
+    ]}
+  />
+
+  <!-- Content Widget for Pain Points **************** -->
+
+  <Content
+    isReversed={false}
+    tagline="Challenges We Address"
+    title="Overcoming Your Business Hurdles"
+    items={[
+      {
+        title: 'Tech Moving Too Fast?',
+        description:
+          "We help you navigate the complexities of modern AI and automation, making digital transformation accessible even if you're feeling left behind.",
+      },
+      {
+        title: 'AI Seems Out of Reach?',
+        description:
+          'Forget expensive agencies and confusing jargon. We provide clear, practical AI solutions tailored for your business.',
+      },
+      {
+        title: 'Drowning in Manual Work?',
+        description:
+          'Reclaim your time from draining tasks like data entry, invoicing, and lead qualification through smart automation.',
+      },
+      {
+        title: 'Bloated or Disconnected Tech?',
+        description:
+          'We help streamline your tech stack, ensuring your tools work together efficiently and deliver real value.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/landing-hurdles.jpeg',
+      alt: 'Business Challenges Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        We help non-technical teams use AI without the hassle.
+      </h3>
+      Ethical, explainable, and effective automation tailored for you.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features Widget for Who We Serve *************** -->
+
+  <Features
+    id="who-we-serve"
+    tagline="Our Clients"
+    title="Who Can Benefit from Our Systems?"
+    subtitle="We partner with a diverse range of clients to implement transformative automation."
+    items={[
+      {
+        title: 'Small & Medium Businesses',
+        description:
+          'Looking to scale operations, improve efficiency, and compete effectively without massive overheads.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'Founders & Creators',
+        description: 'Overwhelmed by manual tasks and seeking to automate workflows to focus on vision and growth.',
         icon: 'tabler:users',
       },
       {
-        title: 'Sales Process Automation',
-        description: 'Quote generation, proposal creation, follow-ups, and CRM updates that happen automatically.',
-        icon: 'tabler:chart-bar',
+        title: 'Agencies',
+        description: 'Needing robust backend automation to enhance service delivery and scale client offerings.',
+        icon: 'tabler:briefcase',
       },
       {
-        title: 'Marketing Systems',
-        description: 'Content creation, scheduling, and distribution across platforms without daily manual effort.',
-        icon: 'tabler:brand-facebook',
-      },
-      {
-        title: 'Operations Streamlining',
+        title: 'Internal Ops Teams',
         description:
-          'Automated reports, approval flows, client onboarding, and internal processes that save hours daily.',
-        icon: 'tabler:settings',
-      },
-      {
-        title: 'AI-Powered Tools',
-        description: 'Custom AI agents that handle customer service, content creation, data analysis, and more.',
-        icon: 'tabler:robot',
-      },
-      {
-        title: 'Integration Solutions',
-        description:
-          'Connected systems where your tools talk to each other, eliminating data entry and manual transfers.',
-        icon: 'tabler:arrow-autofit-width',
+          'Lacking dedicated developers but needing to streamline internal processes and improve productivity.',
+        icon: 'tabler:settings-cog',
       },
     ]}
   />
@@ -121,7 +196,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/landing-iphone.jpeg',
       alt: 'Automation Solution Image',
     }}
   >
@@ -141,12 +216,13 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Save 10-30+ Hours Weekly',
+        title: 'Save Time Every Week',
         description: 'Automate repetitive tasks that eat up your valuable time.',
       },
       {
-        title: 'Scale Without Hiring',
-        description: 'Grow your operations without proportionally increasing headcount.',
+        title: "Multiply Your Team's Impact",
+        description:
+          'Empower your employees to achieve more by automating repetitive, dull tasks—so they can focus on creative, high-value work and deliver greater results without burnout.',
       },
       {
         title: 'Never Drop Opportunities',
@@ -158,7 +234,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      src: '~/assets/images/landing-rest.jpeg',
       alt: 'Results Image',
     }}
   >
@@ -178,55 +254,64 @@ const metadata = {
     tagline="Pricing"
     items={[
       {
-        title: 'Automation Starter',
-        description: 'Perfect for small businesses looking to automate their first core process',
-        icon: 'flat-color-icons:template',
+        title: 'Automation Audit',
+        description:
+          'A comprehensive review of your current workflows and tech stack. Receive a clear roadmap for high-ROI automation opportunities tailored to your business.',
+        icon: 'tabler:clipboard-check',
         callToAction: {
-          text: 'Starting at $1,000/mo',
+          text: 'Get Your Audit',
           href: '#contact',
         },
-        features: [
-          'One custom automation system',
-          'Implementation & training',
-          'Monthly maintenance & updates',
-          'Email support',
-          'Tools & platform fees included',
-          'Additional systems: $750 each',
-        ],
       },
       {
-        title: 'Business Accelerator',
-        description: 'Ideal for businesses ready to automate multiple processes',
-        icon: 'flat-color-icons:gallery',
+        title: 'AI SEO Starter Kit',
+        description:
+          'End-to-end AI-powered SEO pipeline: keyword research, content generation, auto-publishing, and internal linking. Perfect for content-driven businesses.',
+        icon: 'tabler:search',
         callToAction: {
-          text: 'Starting at $2,500/mo',
+          text: 'Start with SEO',
           href: '#contact',
         },
-        features: [
-          'Three custom automation systems',
-          'Implementation & training',
-          'Weekly check-ins',
-          'Priority email & chat support',
-          'Tools & platform fees included',
-          'Additional systems: $500 each',
-        ],
       },
       {
-        title: 'Enterprise Partner',
-        description: 'For businesses wanting complete workflow automation',
-        icon: 'flat-color-icons:approval',
+        title: 'Lead Capture + CRM Integrator',
+        description:
+          'Automate lead capture, qualification, and CRM sync. Never miss a lead and keep your sales pipeline organized and responsive.',
+        icon: 'tabler:users',
         callToAction: {
-          text: 'Starting at $4,900/mo',
+          text: 'Automate Leads',
           href: '#contact',
         },
-        features: [
-          'Unlimited automation systems',
-          'Implementation & training',
-          'Weekly strategy meetings',
-          'Dedicated Slack channel',
-          'Tools & platform fees included',
-          'Senior automation engineer',
-        ],
+      },
+      {
+        title: 'Social Media Autopilot',
+        description:
+          'Automate your social media content creation, scheduling, and cross-platform publishing. Stay visible and consistent with less effort.',
+        icon: 'tabler:brand-instagram',
+        callToAction: {
+          text: 'Go Autopilot',
+          href: '#contact',
+        },
+      },
+      {
+        title: 'Conversational AI Voice Agent',
+        description:
+          'Deploy a voice assistant to triage client needs, answer FAQs, and route leads—integrated with your CRM and communication tools.',
+        icon: 'tabler:microphone',
+        callToAction: {
+          text: 'Add Voice Agent',
+          href: '#contact',
+        },
+      },
+      {
+        title: 'VPS-based n8n Setup',
+        description:
+          'Your own private, secure automation server—fully managed or self-hosted. Includes setup, onboarding, and ongoing support.',
+        icon: 'tabler:server',
+        callToAction: {
+          text: 'Get n8n Setup',
+          href: '#contact',
+        },
       },
     ]}
   >
@@ -262,7 +347,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/landing-ideas.jpeg',
       alt: 'How it works image',
     }}
   />
@@ -276,34 +361,36 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'What tools do you use to build automation systems?',
-        description:
-          'We primarily use n8n, Make (formerly Integromat), Zapier, and custom solutions depending on your specific needs. We select the right tool for each job to ensure optimal performance and scalability.',
+        title: 'What tools do you use?',
+        description: faqDesc1,
       },
       {
-        title: 'Do I need to understand how the automation works?',
-        description:
-          "Not at all. We handle all the technical details and provide simple dashboards and interfaces for you to monitor and control your systems. We also provide thorough training so you understand what the system does, even if you don't need to know how it works.",
+        title: 'What do I need to get started?',
+        description: faqDesc2,
       },
       {
-        title: 'How long does it take to implement an automation system?',
-        description:
-          'Most systems can be implemented within 2-4 weeks, depending on complexity. Simple automations might take just a few days, while more complex enterprise solutions could take 6-8 weeks for full implementation.',
+        title: "Is this for me if I don't know how AI works?",
+        description: faqDesc3,
       },
       {
-        title: 'What happens if the automation breaks or needs updates?',
-        description:
-          "All our service plans include ongoing maintenance and support. If something breaks, we fix it promptly. As your business evolves, we'll update your systems to accommodate your changing needs.",
+        title: 'Can I cancel the subscription any time?',
+        description: faqDesc4,
       },
       {
-        title: 'Can you integrate with my existing tools and software?',
-        description:
-          "Yes! We specialize in connecting different platforms and tools. We work with most major business software and can often develop custom connections for specialized tools. During our discovery process, we'll assess your current tech stack and ensure compatibility.",
+        title: 'Can I request custom builds?',
+        description: faqDesc5,
       },
       {
-        title: 'How soon will I see results from automation?',
-        description:
-          'Most clients begin seeing time savings immediately after implementation. More complex benefits like increased sales or improved customer retention typically become apparent within 1-3 months as the automated processes generate data and outcomes.',
+        title: 'How long does it take to set up my first automation?',
+        description: `Most clients see their first automation live within 1–2 weeks, depending on complexity and your team's availability for feedback. We move quickly, but always at a pace that ensures you're comfortable and in control.`,
+      },
+      {
+        title: 'Will I need to change my existing tools or software?',
+        description: `Not at all! We specialize in integrating with the tools you already use—like Google Sheets, Notion, or your CRM. If a new tool would add value, we'll explain why and help you adopt it smoothly, but we never force unnecessary changes.`,
+      },
+      {
+        title: 'What kind of support do you offer after launch?',
+        description: `We provide ongoing support, maintenance, and optimization as part of our subscription. You'll have direct access to our team for troubleshooting, updates, and new automation ideas—so your systems keep delivering value as your business evolves.`,
       },
     ]}
   />
@@ -329,23 +416,26 @@ const metadata = {
         href: '#contact',
         icon: 'tabler:calendar',
       },
+      {
+        variant: 'secondary',
+        text: 'Get Your Automation Audit',
+        href: '#contact',
+        icon: 'tabler:clipboard-check',
+      },
     ]}
     id="contact"
   >
     <Fragment slot="title">
-      Ready to <span class="text-accent">Automate</span> Your <br class="block sm:hidden" /><span
-        class="sm:whitespace-nowrap">Business Growth?</span
-      >
+      Ready to Unlock <span class="text-accent">Your Business</span>
+      <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Potential?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Let's discuss how automation can transform your specific business operations.
+      Let's explore how tailored automation can free up your time and drive growth.
+      <br class="hidden md:inline" />Schedule a free consultation or get a personalized automation audit.
       <br /><br />
       <span class="text-sm"
-        >Not quite ready? Watch practical automation examples on our <a
-          href="https://www.youtube.com/@automatyzacjaai"
-          class="text-primary hover:underline">YouTube channel</a
-        > or email us at <a href="mailto:contact@capybarastudios.com" class="text-primary hover:underline"
+        >Not quite ready? Email us at <a href="mailto:contact@capybarastudios.com" class="text-primary hover:underline"
           >contact@capybarastudios.com</a
         ></span
       >

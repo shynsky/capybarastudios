@@ -1,0 +1,46 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+const { items = [], title = '', subtitle = '', tagline = '' } = Astro.props;
+---
+
+<section class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <Headline title={title} subtitle={subtitle} tagline={tagline} />
+  <div class="divide-y divide-gray-200 dark:divide-slate-700" x-data="{ open: null }">
+    {
+      items.map((faq, idx) => (
+        <div class="py-4">
+          <button
+            class="w-full text-left flex items-center justify-between py-2 font-semibold text-lg text-gray-900 dark:text-white focus:outline-none"
+            x-on:click={`open === ${idx} ? open = null : open = ${idx}`}
+            aria-expanded="false"
+          >
+            <span>{faq.title}</span>
+            <svg
+              x-show={`open !== ${idx}`}
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+            <svg
+              x-show={`open === ${idx}`}
+              class="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+          <div x-show={`open === ${idx}`} x-transition class="mt-2 text-muted dark:text-slate-400" x-cloak>
+            <div set:html={faq.description} />
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

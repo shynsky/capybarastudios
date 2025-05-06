@@ -31,31 +31,48 @@ const {
         }`,
         containerClass
       )}
+      x-data="{ open: null }"
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
+      {items.map((item, idx) => (
         <div class="intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-          <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
+          <div class={twMerge('flex flex-row max-w-md', panelClass, item.classes?.panel)}>
             <div class="flex justify-center">
-              {(icon || defaultIcon) && (
+              {(item.icon || defaultIcon) && (
                 <Icon
-                  name={icon || defaultIcon}
-                  class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)}
+                  name={item.icon || defaultIcon}
+                  class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, item.classes?.icon)}
                 />
               )}
             </div>
-            <div class="mt-0.5">
-              {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
-              {description && (
-                <p
-                  class={twMerge(`${title ? 'mt-3' : ''} text-muted`, descriptionClass, itemClasses?.description)}
-                  set:html={description}
-                />
-              )}
-              {callToAction && (
-                <div class={twMerge(`${title || description ? 'mt-3' : ''}`, actionClass, itemClasses?.actionClass)}>
-                  <Button variant="link" {...callToAction} />
-                </div>
-              )}
+            <div class="mt-0.5 w-full">
+              <button
+                class={twMerge('text-xl font-bold w-full text-left focus:outline-none', titleClass, item.classes?.title)}
+                @click={`open === ${idx} ? open = null : open = ${idx}`}
+                :aria-expanded={`open === ${idx}`}
+                type="button"
+              >
+                {item.title}
+              </button>
+              <div
+                x-show={`open === ${idx}`}
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 max-h-0"
+                x-transition:enter-end="opacity-100 max-h-96"
+                x-transition:leave="transition ease-in duration-200"
+                x-transition:leave-start="opacity-100 max-h-96"
+                x-transition:leave-end="opacity-0 max-h-0"
+                class={twMerge(`${item.title ? 'mt-3' : ''} text-muted overflow-hidden`, descriptionClass, item.classes?.description)}
+                x-cloak
+              >
+                {item.description && (
+                  <p set:html={item.description} />
+                )}
+                {item.callToAction && (
+                  <div class={twMerge(`${item.title || item.description ? 'mt-3' : ''}`, actionClass, item.classes?.actionClass)}>
+                    <Button variant="link" {...item.callToAction} />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
