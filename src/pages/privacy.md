@@ -5,15 +5,13 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 _Last updated_: April 10, 2025
 
-Welcome to Capybara Studios (capybarastudios.com), operated by Marek Wituszynski Media Works (NIP: 8942767220), a sole proprietorship registered in Poland. Your privacy is important to us. This policy explains what data we collect, why we collect it, and how we handle it.
+Welcome to Capybara Studios (capybarastudios.com). Your privacy is important to us. This policy explains what data we collect, why we collect it, and how we handle it.
 
 ---
 
 ## 1. Who We Are
 
-**Business Name:** Marek Wituszynski Media Works  
-**NIP (Tax ID):** 8942767220  
-**Operating Brand:** Capybara Studios  
+**Business Name:** Capybara Studios  
 **Website:** [https://capybarastudios.com](https://capybarastudios.com)  
 **Contact Email:** contact@capybarastudios.com
 
@@ -103,5 +101,4 @@ We may update this policy from time to time to remain compliant or reflect new f
 For any questions or requests regarding your personal data, contact us at:
 
 **Email:** contact@capybarastudios.com  
-**Business Owner:** Marek Wituszynski  
 **Location:** Poland
