@@ -26,6 +26,7 @@
 - [ ] Add analytics for traffic, conversions, and bot usage
 - [ ] Expand the showcase/portfolio section with more case studies and proof points
 - [ ] Regularly update the blog with educational and SEO-focused content
+- [x] Increase font size for hero section title on homepage
 
 ## Discovered During Work / Ongoing
 - [ ] Keep this task list updated as new features are added or completed
