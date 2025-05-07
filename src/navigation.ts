@@ -32,38 +32,12 @@ export const headerData = {
       ],
     },
     {
-      text: 'Company',
-      links: [
-        {
-          text: 'About',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Success Stories',
-          href: getPermalink('#'),
-        },
-      ],
+      text: 'Blog',
+      href: getBlogPermalink(),
     },
     {
-      text: 'Resources',
-      links: [
-        {
-          text: 'Blog',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Automation Guides',
-          href: getPermalink('#'),
-        },
-        {
-          text: 'Case Studies',
-          href: getPermalink('#'),
-        }
-      ],
+      text: 'Contact',
+      href: getPermalink('/contact'),
     },
   ],
   actions: [{ text: 'Schedule a Call', href: '#contact' }],
@@ -98,25 +72,6 @@ export const footerData = {
           text: 'Custom Automation Solutions',
           href: getPermalink('/services/custom-automation-solutions'),
         },
-      ],
-    },
-    {
-      title: 'Resources',
-      links: [
-        { text: 'Automation Guides', href: '#' },
-        { text: 'Case Studies', href: '#' },
-        { text: 'FAQ', href: '#' },
-        { text: 'YouTube Channel', href: 'https://www.youtube.com/@automatyzacjaai' },
-        { text: 'Blog', href: getBlogPermalink() },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: getPermalink('/about') },
-        { text: 'Contact', href: getPermalink('/contact') },
-        { text: 'Success Stories', href: '#' },
-        { text: 'Schedule a Call', href: '#contact' },
       ],
     },
   ],
