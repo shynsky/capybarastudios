@@ -16,6 +16,7 @@
 
 ## Planned / In Progress
 - [ ] Polish all copywriting for clarity, tone, and conversion
+  - [x] Adjust About page copywriting for Capybara Studios use case
 - [ ] Add subpages for each service
   - [ ] Each service page should describe the customer's potential problem in natural language
   - [ ] Each should include the Capybara Studios way of solving the problem (our unique approach)
