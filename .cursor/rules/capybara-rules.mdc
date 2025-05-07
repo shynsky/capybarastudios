@@ -1,0 +1,6 @@
+---
+description: Use this rule when you have a task regarding copywriting. 
+globs: 
+alwaysApply: false
+---
+Read [ABOUT.md](mdc:ABOUT.md). If there's new information provided in the context, update [ABOUT.md](mdc:ABOUT.md). If information is mismatched, ask which is 'true'. 
