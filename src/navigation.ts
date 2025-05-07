@@ -6,20 +6,28 @@ export const headerData = {
       text: 'Services',
       links: [
         {
-          text: 'Marketing Automation',
-          href: getPermalink('#'),
+          text: 'Automation Audit',
+          href: getPermalink('/services/automation-audit'),
         },
         {
-          text: 'Sales Enhancement',
-          href: getPermalink('#'),
+          text: 'AI SEO Starter Kit',
+          href: getPermalink('/services/ai-seo-starter-kit'),
         },
         {
-          text: 'Operations Streamlining',
-          href: getPermalink('#'),
+          text: 'Lead Capture + CRM Integrator',
+          href: getPermalink('/services/lead-capture-crm-integrator'),
         },
         {
-          text: 'AI-Powered Growth',
-          href: getPermalink('#'),
+          text: 'Social Media Autopilot',
+          href: getPermalink('/services/social-media-autopilot'),
+        },
+        {
+          text: 'Conversational AI Voice Agent',
+          href: getPermalink('/services/conversational-ai-voice-agent'),
+        },
+        {
+          text: 'Custom Automation Solutions',
+          href: getPermalink('/services/custom-automation-solutions'),
         },
       ],
     },
@@ -54,12 +62,7 @@ export const headerData = {
         {
           text: 'Case Studies',
           href: getPermalink('#'),
-        },
-        {
-          text: 'YouTube Channel',
-          href: 'https://www.youtube.com/@automatyzacjaai',
-          target: '_blank',
-        },
+        }
       ],
     },
   ],
@@ -71,12 +74,30 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Marketing Automation', href: '#' },
-        { text: 'Sales Enhancement', href: '#' },
-        { text: 'Operations Streamlining', href: '#' },
-        { text: 'AI-Powered Growth', href: '#' },
-        { text: 'Content Creation', href: '#' },
-        { text: 'Custom Solutions', href: '#' },
+        {
+          text: 'Automation Audit',
+          href: getPermalink('/services/automation-audit'),
+        },
+        {
+          text: 'AI SEO Starter Kit',
+          href: getPermalink('/services/ai-seo-starter-kit'),
+        },
+        {
+          text: 'Lead Capture + CRM Integrator',
+          href: getPermalink('/services/lead-capture-crm-integrator'),
+        },
+        {
+          text: 'Social Media Autopilot',
+          href: getPermalink('/services/social-media-autopilot'),
+        },
+        {
+          text: 'Conversational AI Voice Agent',
+          href: getPermalink('/services/conversational-ai-voice-agent'),
+        },
+        {
+          text: 'Custom Automation Solutions',
+          href: getPermalink('/services/custom-automation-solutions'),
+        },
       ],
     },
     {

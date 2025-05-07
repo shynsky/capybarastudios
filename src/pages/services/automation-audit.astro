@@ -1,0 +1,94 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const serviceTitle = 'Automation Audit';
+const metadata = {
+  title: `${serviceTitle} - Capybara Studios`,
+  description: `Learn more about our ${serviceTitle} services, designed to identify high-ROI automation opportunities in your business.`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-12 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading dark:text-gray-200">
+          {serviceTitle}
+        </h1>
+        <p class="mt-4 text-xl text-muted dark:text-slate-300">
+          A comprehensive review of your current workflows and tech stack to uncover high-ROI automation opportunities.
+        </p>
+      </header>
+
+      <article class="prose dark:prose-invert lg:prose-xl mx-auto">
+        <section class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            Is This You? The Challenges We Solve
+          </h2>
+          <p>
+            Are you spending too much time on repetitive manual tasks? Do you suspect there are inefficiencies in your
+            workflows but aren't sure where to start? Many businesses struggle with identifying which processes can be
+            effectively automated to save time, reduce costs, and free up their team for more strategic work. You might
+            be facing challenges like:
+          </p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Overwhelming manual data entry or report generation.</li>
+            <li>Siloed software systems that don't communicate.</li>
+            <li>Repetitive administrative tasks that drain productivity.</li>
+            <li>Uncertainty about which automation technologies are right for your specific needs.</li>
+            <li>Fear of investing in complex solutions that don't deliver tangible results.</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            The Capybara Studios Way: Our Audit Approach
+          </h2>
+          <p>
+            Our Automation Audit is a collaborative and thorough process designed to provide you with a clear,
+            actionable roadmap. We don't just look at technology; we look at your business goals and how automation can
+            help you achieve them. Our approach involves:
+          </p>
+          <ol class="list-decimal pl-5 space-y-3">
+            <li>
+              <strong>Discovery & Goal Alignment:</strong> We start by understanding your business, your current pain points,
+              and your strategic objectives. What does success look like for you?
+            </li>
+            <li>
+              <strong>Workflow Analysis:</strong> We dive deep into your existing processes, mapping out key workflows across
+              departments (operations, marketing, sales, admin) to identify bottlenecks and manual effort.
+            </li>
+            <li>
+              <strong>Technology Stack Review:</strong> We assess your current software and tools to understand what you're
+              already using and how new automations can integrate or improve upon it.
+            </li>
+            <li>
+              <strong>Opportunity Identification:</strong> Based on our findings, we pinpoint specific, high-impact automation
+              opportunities, prioritizing those with the best potential for ROI and quick wins.
+            </li>
+            <li>
+              <strong>Custom Roadmap Delivery:</strong> You receive a detailed report outlining recommended automations,
+              estimated benefits (time saved, cost reduction, efficiency gains), technology suggestions, and an implementation
+              plan. This roadmap is yours to keep and implement as you see fit, whether with us or another provider.
+            </li>
+          </ol>
+          <p class="mt-4">
+            Our goal is to demystify automation and provide you with a practical, jargon-free plan that empowers you to
+            make informed decisions.
+          </p>
+        </section>
+
+        <div class="mt-12 text-center py-8 bg-slate-100 dark:bg-slate-800 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            Ready to Uncover Your Automation Potential?
+          </h3>
+          <p class="mb-6 text-muted dark:text-slate-300">
+            Let's identify where automation can make the biggest difference for your business.
+          </p>
+          <a href="/contact" class="btn btn-primary text-lg px-8 py-3">Schedule Your Audit Consultation</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Layout>
+

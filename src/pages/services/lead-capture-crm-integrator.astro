@@ -1,0 +1,99 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const serviceTitle = 'Lead Capture + CRM Integrator';
+const metadata = {
+  title: `${serviceTitle} - Capybara Studios`,
+  description: `Streamline your sales pipeline with our ${serviceTitle} service, ensuring no lead falls through the cracks.`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-12 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading dark:text-gray-200">
+          {serviceTitle}
+        </h1>
+        <p class="mt-4 text-xl text-muted dark:text-slate-300">
+          Automate lead capture, qualification, and CRM sync. Never miss a lead and keep your sales pipeline organized
+          and responsive.
+        </p>
+      </header>
+
+      <article class="prose dark:prose-invert lg:prose-xl mx-auto">
+        <section class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            The Problem: Leaky Buckets and Lost Opportunities
+          </h2>
+          <p>
+            Are valuable leads slipping through the cracks due to manual processes or disconnected systems? Many
+            businesses struggle to efficiently capture, qualify, and route leads to their sales teams, resulting in
+            missed opportunities and a disorganized pipeline. Common issues include:
+          </p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Manual data entry of leads from contact forms, emails, or social media into your CRM.</li>
+            <li>Delayed follow-up times, allowing competitors to engage first.</li>
+            <li>Inconsistent lead qualification processes.</li>
+            <li>Difficulty tracking lead sources and measuring ROI on marketing efforts.</li>
+            <li>Sales teams spending too much time on administrative tasks instead of selling.</li>
+          </ul>
+        </section>
+
+        <section class="mb-12">
+          <h2 class="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            The Capybara Studios Way: Seamless Lead Management Automation
+          </h2>
+          <p>
+            Our Lead Capture + CRM Integrator service provides a robust, automated system to ensure every lead is
+            captured, nurtured, and managed effectively. We connect your various lead sources directly to your CRM,
+            streamlining the entire process. Here's our approach:
+          </p>
+          <ol class="list-decimal pl-5 space-y-3">
+            <li>
+              <strong>Omni-Channel Lead Source Integration:</strong> We connect all your lead generation points—website forms,
+              landing pages, social media ads, email marketing, chatbots—to a central automation hub.
+            </li>
+            <li>
+              <strong>Automated Data Capture & Enrichment:</strong> Leads are automatically captured, and where possible,
+              enriched with additional data (e.g., company information, social profiles) to provide a fuller picture for
+              your sales team.
+            </li>
+            <li>
+              <strong>Intelligent Lead Qualification & Scoring:</strong> We can implement automated lead scoring based on
+              predefined criteria (e.g., demographics, engagement, firmographics) to prioritize high-potential leads.
+            </li>
+            <li>
+              <strong>Instant CRM Synchronization:</strong> Qualified leads, along with all relevant data, are instantly
+              and accurately synced to your CRM (e.g., HubSpot, Salesforce, Pipedrive, Notion), creating new deals or updating
+              existing records.
+            </li>
+            <li>
+              <strong>Automated Notifications & Task Creation:</strong> Sales reps can be automatically notified of new hot
+              leads, and tasks can be created in the CRM for prompt follow-up.
+            </li>
+            <li>
+              <strong>Basic Nurturing Sequences:</strong> We can set up initial automated email nurturing sequences to engage
+              leads immediately after capture, providing value and keeping your brand top-of-mind.
+            </li>
+          </ol>
+          <p class="mt-4">
+            By automating these critical steps, we help you build a more efficient, responsive, and organized sales
+            pipeline, ensuring you maximize every opportunity.
+          </p>
+        </section>
+
+        <div class="mt-12 text-center py-8 bg-slate-100 dark:bg-slate-800 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            Ready to Supercharge Your Sales Pipeline?
+          </h3>
+          <p class="mb-6 text-muted dark:text-slate-300">
+            Stop losing leads and start closing more deals with automated efficiency.
+          </p>
+          <a href="/contact" class="btn btn-primary text-lg px-8 py-3">Automate Your Lead Flow</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Layout>
+

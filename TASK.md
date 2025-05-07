@@ -19,6 +19,13 @@
 - [ ] Add subpages for each service
   - [ ] Each service page should describe the customer's potential problem in natural language
   - [ ] Each should include the Capybara Studios way of solving the problem (our unique approach)
+  - [x] Create page for Automation Audit
+  - [x] Create page for AI SEO Starter Kit
+  - [x] Create page for Lead Capture + CRM Integrator
+  - [x] Create page for Social Media Autopilot
+  - [x] Create page for Conversational AI Voice Agent
+  - [x] Create page for VPS-based n8n Setup
+  - [x] Rename 'VPS-based n8n Setup' to 'Custom Automation Solutions' and update content/links
 - [ ] Add a block with free first blog posts (showcase value)
 - [ ] Perform a full "tariff check" (pricing/offer review) before using the site as a public showcase
 - [ ] Integrate a chatbot for lead qualification and visitor support
